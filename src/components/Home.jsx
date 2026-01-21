@@ -1,9 +1,17 @@
 import { Link , useLocation } from "react-router-dom"
 import "../components/styles.css"
+import { useEffect } from "react";
 
 function Home() {
      const location = useLocation();
-    return (
+    
+        useEffect(() => {
+        alert(localStorage.getItem("msg"));      
+    }, []);
+    const clearData=()=>{
+        localStorage.setItem("msg","");
+    }
+return (
         <>
             <div className="head">
                 <Link to="/">Main</Link>
@@ -13,7 +21,8 @@ function Home() {
                 <br></br>
                 <h1>This is home page</h1>
             </div>
-             <p>I'm belongs to ---{location.state?.course}</p>
+            <p>I'm belongs to ---{location.state?.course}</p>
+           <button onClick={clearData} class="glass-btn">clear</button>  
         </>
     )
 }

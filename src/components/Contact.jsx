@@ -28,7 +28,7 @@ function Contact() {
                     </div>
 
                     <div className="info-section">
-                         <p>I'm belongs to ---{location.state?.course}</p>
+                         <p>I belong to ---{location.state?.course}</p>
                         <p><span>ID Number:</span> 2500080015</p>
                         <p><span>Name:</span>Thanusree</p>
                         <p><span>Phone:</span> 9848386214</p>

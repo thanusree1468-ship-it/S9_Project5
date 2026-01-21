@@ -13,7 +13,7 @@ function About() {
                 <Link to="/Contact">Contact</Link>
                 <br></br></div>
                 <h1>This is the about page u know!!!!</h1> 
-                <p>I'm belongs to ---{location.state?.course}</p>
+                <p>I belong to ---{location.state?.course}</p>
            
         </>
     )
